@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do you know me ?</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section class="quiz">
+            <div class="heading">
+                <p class="title">
+                    How well do you know your girlfriend?
+                </p>
+                <p class="subtitle">
+                    Will she continue to be your girlfriend even after this quiz?
+                </p>
+            </div>
+            <div class="result hide">
+                <p>You scored 10/10! That's amazing!</p>
+                <p class="reload">
+                    <button onclick="reload(event)">Try again?</button>
+                </p>
+            </div>
+            <form class="quiz-form">
+                <!-- Question 1 -->
+                <div class="question">
+                    <p>What is my favorite color?</p>
+                    <div class="options">
+                        <input type="radio" name="q1" value="A">
+                        <label for="A">Blue</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q1" value="B">
+                        <label for="B">White</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q1" value="C">
+                        <label for="C">Green</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q1" value="D">
+                        <label for="D">Yellow</label>
+                    </div>
+                </div>
+                <!-- Question 2 -->
+                <div class="question">
+                    <p>What is my favorite food?</p>
+                    <div class="options">
+                        <input type="radio" name="q2" value="A">
+                        <label for="A">Pizza</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q2" value="B">
+                        <label for="B">Sushi</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q2" value="C">
+                        <label for="C">Burgers</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q2" value="D">
+                        <label for="D">Tacos</label>
+                    </div>
+                </div>
+                <!-- Question 3 -->
+                <div class="question">
+                    <p>What is my favorite movie genre?</p>
+                    <div class="options">
+                        <input type="radio" name="q3" value="A">
+                        <label for="A">Action</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q3" value="B">
+                        <label for="B">Comedy</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q3" value="C">
+                        <label for="C">Horror</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q3" value="D">
+                        <label for="D">Romance</label>
+                    </div>
+                </div>
+                <!-- Question 4 -->
+                <div class="question">
+                    <p>What is my favorite season?</p>
+                    <div class="options">
+                        <input type="radio" name="q4" value="A">
+                        <label for="A">Summer</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q4" value="B">
+                        <label for="B">Fall</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q4" value="C">
+                        <label for="C">Winter</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q4" value="D">
+                        <label for="D">Spring</label>
+                    </div>
+                </div>
+                <!-- Question 5 -->
+                <div class="question">
+                    <p>What is my favorite animal?</p>
+                    <div class="options">
+                        <input type="radio" name="q5" value="A">
+                        <label for="A">Dog</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q5" value="B">
+                        <label for="B">Cat</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q5" value="C">
+                        <label for="C">Bird</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q5" value="D">
+                        <label for="D">Fish</label>
+                    </div>
+                </div>
+                <!-- Question 6 -->
+                <div class="question">
+                    <p>What is my favorite hobby?</p>
+                    <div class="options">
+                        <input type="radio" name="q6" value="A">
+                        <label for="A">Reading</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q6" value="B">
+                        <label for="B">Painting</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q6" value="C">
+                        <label for="C">Playing sports</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q6" value="D">
+                        <label for="D">Cooking</label>
+                    </div>
+                </div>
+                <!-- Question 7 -->
+                <div class="question">
+                    <p>What is my dream vacation destination?</p>
+                    <div class="options">
+                        <input type="radio" name="q7" value="A">
+                        <label for="A">Paris, France</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q7" value="B">
+                        <label for="B">Tokyo, Japan</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q7" value="C">
+                        <label for="C">Bora Bora</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q7" value="D">
+                        <label for="D">Santorini, Greece</label>
+                    </div>
+                </div>
+                <!-- Question 8 -->
+                <div class="question">
+                    <p>What is my favorite type of music?
+                    </p>
+                    <div class="options">
+                        <input type="radio" name="q8" value="A">
+                        <label for="A">Pop</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q8" value="B">
+                        <label for="B">Rock</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q8" value="C">
+                        <label for="C">Jazz</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q8" value="D">
+                        <label for="D">Classical</label>
+                    </div>
+                </div>
+                <!-- Question 9 -->
+                <div class="question">
+                    <p>What is my favorite dessert?</p>
+                    <div class="options">
+                        <input type="radio" name="q9" value="A">
+                        <label for="A">Chocolate cake</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q9" value="B">
+                        <label for="B">Ice cream</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q9" value="C">
+                        <label for="C">Cheesecake</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q9" value="D">
+                        <label for="D">Apple pie</label>
+                    </div>
+                </div>
+                <!-- Question 10 -->
+                <div class="question">
+                    <p>What is my favorite book genre?</p>
+                    <div class="options">
+                        <input type="radio" name="q10" value="A">
+                        <label for="A">Mystery</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q10" value="B">
+                        <label for="B">Fantasy</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q10" value="C">
+                        <label for="C">Science fiction</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="q10" value="D">
+                        <label for="D">Romance</label>
+                    </div>
+                </div>
+                <!-- Submit Button -->
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
